@@ -19,3 +19,4 @@ try:
     # проверка
 except ValueError:
     print("что-то пошло не так")
+
