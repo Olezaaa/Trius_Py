@@ -1,16 +1,15 @@
 #Дано целое число N (> 0). Найти сумму N2 + (N + 1)2 + (N + 2)2 + ... + (2N)2
+def calculate(N):
+    sum = 0
+    i = N
+    while i <= 2*N:
+        sum += i**2
+        i += 1
+    return sum
 
-# Ввод целого числа N
-
-N = int(input("Введите целое число N: "))
-
-# Инициализируем переменную для хранения суммы
-result = 0
-
-# Проходим циклом от N до 2N и суммируем квадраты чисел
-for i in range(N, 2 * N + 1):
-    result += i**2
-
-# Выводим результат
-print(result)
-
+try:
+    N = int(input("Введите целое число N: "))
+    result = calculate(N)
+    print("Сумма равна", result)
+except ValueError:
+    print("Введите целое число, пожалуйста")
