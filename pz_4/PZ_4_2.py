@@ -30,4 +30,3 @@ try:
 #проверка
 except ValueError:
     print("Введите число: ")
-
