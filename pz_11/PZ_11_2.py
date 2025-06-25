@@ -1,13 +1,13 @@
-#Из предложенного текстового файла (text18-28.txt) вывести на экран его содержимое, количество символов в тексте. Сформировать новый файл, в который
+#Из предложенного текстового файла (text18-28.txt.txt) вывести на экран его содержимое, количество символов в тексте. Сформировать новый файл, в который
 # поместить текст в стихотворной форме предварительно вставив после строки N (N – задается пользователем) произвольную фразу.
 import chardet
 #определение кодировки файла
-with open('text18-28.txt', 'rb') as file:
+with open('text18-28.txt.txt', 'rb') as file:
     rawdata = file.read()
     result = chardet.detect(rawdata)
     encoding = result['encoding']
 #чтение содержимого файла с учетом определенной кодировки
-with open('text18-28.txt', 'r', encoding=encoding) as file:
+with open('text18-28.txt.txt', 'r', encoding=encoding) as file:
     content = file.read()
     count = len(content)
     print("Содержимое файла:")
