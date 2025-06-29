@@ -3,7 +3,7 @@
 def insert_string(c, S, S0):
     return S.replace(c, S0 + c)
 c = 'a'
-S = 'Toros'
+S = 'Taros'
 S0 = 'x'
 result = insert_string(c, S, S0)
 print(result)
